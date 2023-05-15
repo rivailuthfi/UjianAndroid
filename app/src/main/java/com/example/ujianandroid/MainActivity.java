@@ -40,13 +40,15 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     String nama_lengkap = isian_nama_depan.concat(" ").concat(isian_nama_belakang);
                     daftar_nama.clear();
-                    for (int i = 0; 1 < doubleisian_nama_umur; i++) {
+
+                    for (int i = 0; i< doubleisian_nama_umur; i++){
                         daftar_nama.add(nama_lengkap);
                     }
 
+
+                    daftar_nama.add(nama_lengkap);
                     edNamaDepan.setText("");
                     edNamaBelakang.setText("");
-                    edUmur.setText("");
 
                     intent_list.putStringArrayListExtra("daftar_nama", daftar_nama);
                     startActivity(intent_list);
